@@ -2,8 +2,7 @@ import React from 'react';
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    Link
+    Route
 } from 'react-router-dom';
 import About from './Components/About';
 import Home from './Components/Home';
@@ -17,6 +16,7 @@ function RouteConfig() {
         <div>
             <Router>
             <NavBar></NavBar>
+            <div><h4>Shoe Store - Kashif Hussain</h4></div>
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route path="/about" component={About} />
